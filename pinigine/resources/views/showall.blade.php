@@ -7,6 +7,9 @@
     <div>Apie</div>
     <p>Baldai</p>
 
-    
-    @include('inc.file')
+   
+    <img src="/failai/{{$user->name}}" alt=""width="600" height="500">
+   
+
+
     @endsection

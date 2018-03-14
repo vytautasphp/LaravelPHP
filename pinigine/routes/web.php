@@ -15,11 +15,20 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/gal', function () {
-    return view('gal');
-});
+
 
 Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get("file", 'testing@index');
+Route::post("store", 'testing@store');
+
+Route::get("show", 'testing@showall');
+Route::get("/", 'testing@showall');
+
+Route::get("show/{id}", 'testing@show');

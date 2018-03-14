@@ -12,45 +12,21 @@
        
         <!------ Include the above in your HEAD tag ---------->
         <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <style>
-            #footer{
-                
-                width: 100%;
-                color: #fff;
-                background: #333;
-                position: relative;
-                bottom: 0;
-                
-                
-            }
            
-            #back {
-                height: 200px;
-                background-image: url("");
-                background-size: 5440px 1352px;
-                background-color: #ffff;
-            }
-            .cntr, .img-responsive{
-                display: block;
-                height: auto;
-                max-width: 100%;
-	            margin:0 auto;
-                margin-bottom: 2rem;
-            }
-            .space{  
-                padding-top:1rem;
-            }
         </style>
 
-        <title>Pinigine</title>
+        <title>Baldai</title>
     </head>
     <body>
-    @include('inc.navbar')
+    
+            <div>
+            <div class="container">
+                @include('inc.navbar')
         
-            @if(Request::is('/'))
-            @include('inc.showcase')
-            <div  class="container">
-                <div class="jumbotron">
+        @if(Request::is('/'))
+        @include('inc.showcase')
                 @endif
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
@@ -61,9 +37,7 @@
                 </div>
             </div>
         </div>
-        <footer id="footer" class="text-center">
-            <p>Copyrights 2018 &copy; Wood Pose</p>
-        </footer>
+        <footer id="footer"class="text-center" >Copyrights 2018 &copy; Wood Pose</footer>   
         <script src="lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>
