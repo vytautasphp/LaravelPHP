@@ -12,5 +12,5 @@
     
     @section('sidebar')
     @parent
-        <p>this is appendet to sidebar</p>
+        <p>this is appendet to sidfgffrgfer</p>
     @endsection
